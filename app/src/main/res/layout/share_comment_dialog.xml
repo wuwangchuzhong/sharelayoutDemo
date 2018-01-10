@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_jingcai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingRight="4dp"
+            android:src="@drawable/appposition" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="艺典精彩评论"
+            android:textColor="#888888"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <!--android:layout_width="75dp"-->
+    <!--android:layout_height="130dp"-->
+    <LinearLayout
+        android:id="@+id/iv_comment_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_jingcai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/iv_image"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/lot_image"
+            android:layout_width="75dp"
+            android:layout_height="130dp"
+            android:src="@drawable/yidianwelcom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_lotMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_comment_image"
+        android:layout_marginTop="14.5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_lot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_comment_image"
+            android:text="田黎明 古来万事东流水"
+            android:textColor="#1a1a1a"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/lot_priecle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_comment_image"
+            android:layout_marginTop="15dp"
+            android:text="估价 ￥1,000-3,000"
+            android:textColor="#1a1a1a"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ll_lotMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/iv_image"
+        >
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#1a1a1a"
+            android:text="广州广州琶洲南丰国际会展中心二楼A厅 广州琶洲南丰国际会展中心二楼B厅
+拍卖时间：琶洲南丰国际会展中心二楼A厅 广州琶洲南丰国际会展中心二楼B厅
+拍卖时间："
+            />
+        <!--图片列表-->
+        <ImageView
+            android:layout_marginTop="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/timg"/>
+        <!--头像-->
+       <ImageView
+           android:id="@+id/tv_acout_circle"
+           android:layout_marginTop="20dp"
+           android:layout_gravity="center"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           />
+        <!--android:src=""-->
+        <TextView
+            android:id="@+id/tv_acout_name"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小飞侠"
+            android:textSize="14dp"
+            android:textColor="#1a1a1a"
+            />
+        <TextView
+            android:id="@+id/iv_comment_time"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论于11-13 16:08"
+            android:textSize="14dp"
+            android:textColor="#888888"
+            />
+
+        <ImageView
+            android:id="@+id/iv_erwei"
+            android:layout_gravity="center"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/guideone"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#888888"
+            android:text="识别二维码,查看拍品及更多精彩评论"
+            />
+    </LinearLayout>
+</RelativeLayout>
